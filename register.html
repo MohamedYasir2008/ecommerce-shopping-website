@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register - Simple E‑Commerce</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+    <header>
+        <nav id="navbar"></nav>
+    </header>
+    <main class="container">
+        <h1>Register</h1>
+        <form id="registerForm">
+            <label for="name">Name:</label><br />
+            <input type="text" id="name" required /><br />
+            <label for="email">Email:</label><br />
+            <input type="email" id="email" required /><br />
+            <label for="password">Password:</label><br />
+            <input type="password" id="password" required /><br />
+            <label for="role">Register as:</label><br />
+            <select id="role" required>
+                <option value="customer">Customer</option>
+                <option value="seller">Seller</option>
+            </select><br /><br />
+            <button type="submit" class="btn">Create Account</button>
+        </form>
+        <p>Already have an account? <a href="login.html">Log in here</a></p>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2026 Simple E‑Commerce</p>
+    </footer>
+    <script src="assets/js/storage.js"></script>
+    <script src="assets/js/auth.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        document.getElementById('registerForm').addEventListener('submit', function(e){
+            e.preventDefault();
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const password = document.getElementById('password').value.trim();
+            const role = document.getElementById('role').value;
+            window.Auth.register({name,email,password,role});
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout - Simple E‑Commerce</title>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body>
+    <header>
+        <nav id="navbar"></nav>
+    </header>
+    <main class="container" id="checkoutPage">
+        <h1>Checkout</h1>
+        <div id="orderSummary"></div>
+        <h2>Delivery Information</h2>
+        <form id="checkoutForm">
+            <label for="fullName">Full Name:</label><br />
+            <input type="text" id="fullName" required /><br />
+            <label for="address">Address:</label><br />
+            <textarea id="address" rows="3" required></textarea><br />
+            <label for="phone">Phone:</label><br />
+            <input type="tel" id="phone" required /><br />
+            <h2>Payment Method</h2>
+            <select id="paymentMethod" required>
+                <option value="UPI">UPI (demo)</option>
+                <option value="Card">Card (demo)</option>
+                <option value="COD">Cash on Delivery</option>
+            </select><br /><br />
+            <button type="submit" class="btn">Place Order</button>
+        </form>
+        <div id="confirmationMessage" style="display:none; margin-top:1rem;">
+            <h2>Order Placed!</h2>
+            <p id="orderIdDisplay"></p>
+            <a href="orders.html" class="btn">View My Orders</a>
+        </div>
+    </main>
+    <footer class="footer"><p>&copy; 2026 Simple E‑Commerce</p></footer>
+    <script src="../assets/js/storage.js"></script>
+    <script src="../assets/js/auth.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="checkout.js"></script>
+</body>
+</html>

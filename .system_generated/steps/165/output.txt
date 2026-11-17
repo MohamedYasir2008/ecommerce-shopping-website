@@ -1,0 +1,12 @@
+Created At: 2026-11-17T10:51:16+05:30
+Completed At: 2026-11-17T10:51:19+05:30
+Command exited with code 1.
+
+Command output:
+New-Item : An item with the specified name C:\Users\MY-PC\Desktop\yasir already exists.
+At line:1 char:51
++ ... \yasir')) { New-Item -ItemType Directory -Path 'C:\Users\MY-PC\Deskto ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ResourceExists: (C:\Users\MY-PC\Desktop\yasir:String) [New-Item], IOException
+    + FullyQualifiedErrorId : DirectoryExist,Microsoft.PowerShell.Commands.NewItemCommand
+ 

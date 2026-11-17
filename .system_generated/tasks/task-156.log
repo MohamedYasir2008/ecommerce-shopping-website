@@ -1,0 +1,29 @@
+Output:
+{
+  "issues": [
+    [
+      "admin\\dashboard.html",
+      "script src",
+      "admin-dashboard.js",
+      "File not found"
+    ],
+    [
+      "admin\\manage-categories.html",
+      "script src",
+      "manage-categories.js",
+      "File not found"
+    ],
+    [
+      "admin\\manage-users.html",
+      "script src",
+      "manage-users.js",
+      "File not found"
+    ],
+    [
+      "customer\\profile.html",
+      "script src",
+      "profile.js",
+      "File not found"
+    ]
+  ]
+}

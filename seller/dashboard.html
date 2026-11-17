@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seller Dashboard - Simple E‑Commerce</title>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body>
+    <header>
+        <nav id="navbar"></nav>
+    </header>
+    <main class="container" id="sellerDashboard">
+        <h1>Welcome, <span id="sellerName"></span>!</h1>
+        <div class="grid">
+            <div class="card"><h3>Total Products</h3><p id="totalProducts">0</p></div>
+            <div class="card"><h3>Approved Products</h3><p id="approvedProducts">0</p></div>
+            <div class="card"><h3>Pending Products</h3><p id="pendingProducts">0</p></div>
+            <div class="card"><h3>Total Orders</h3><p id="totalOrders">0</p></div>
+        </div>
+        <h2>Recent Orders</h2>
+        <div id="recentOrders"></div>
+        <h2>Quick Links</h2>
+        <ul>
+            <li><a href="add-product.html">Add Product</a></li>
+            <li><a href="manage-products.html">Manage Products</a></li>
+            <li><a href="manage-orders.html">Manage Orders</a></li>
+            <li><a href="reports.html">Reports</a></li>
+        </ul>
+    </main>
+    <footer class="footer"><p>&copy; 2026 Simple E‑Commerce</p></footer>
+    <script src="../assets/js/storage.js"></script>
+    <script src="../assets/js/auth.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="dashboard.js"></script>
+</body>
+</html>

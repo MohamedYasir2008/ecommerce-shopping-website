@@ -1,0 +1,15 @@
+Created At: 2026-11-17T10:52:07+05:30
+Completed At: 2026-11-17T10:52:08+05:30
+Command exited with code 0.
+
+Command output:
+
+
+    Directory: C:\Users\MY-PC\Desktop\yasir
+
+
+Mode                 LastWriteTime         Length Name                                                                 
+----                 -------------         ------ ----                                                                 
+d-----         17-Nov-26  10:52 AM                ecommerce-shopping-website                                           
+
+
